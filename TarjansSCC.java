@@ -128,3 +128,13 @@ class TarjansSCC {
             System.out.println("Nodes:- " + cc);
     }
 }
+
+
+/*
+OUTPUT
+------------------
+number of SCC:- 3
+Nodes:- [0, 1, 2]
+Nodes:- [3, 7]
+Nodes:- [4, 5, 6]
+*/
