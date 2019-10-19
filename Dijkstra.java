@@ -4,6 +4,7 @@ import java.util.stream.Collectors;
 /* Dijkstra's algorithm is Single Source Shortest Path (SSSP) algorithm
 for graph with `non-negative` edge weights.
 Algorithm acts in Greedy manner to select most promising node
+time complexity: O(E * log(V))
 */
 
 
@@ -147,15 +148,16 @@ class Dijkstra {
 
         Dijkstra d = new Dijkstra(graph, n);
 
-        System.out.printf("total cost from %d to %d: %f\n", 0, 4, d.dijkstra(0, 4));
+        System.out.printf("total cost from %d to %d: %.2f\n", 0, 4, d.dijkstra(0, 4));
 
         List<Integer> path = d.reconstructPath(0, 4);
-        System.out.printf("Path from %d to %d: %s", 3, 4, d.formatPath(path));
+        System.out.printf("Path from %d to %d: %s", 0, 4, d.formatPath(path));
     }
 }
 
 /*
 OUTPUT
-total cost from 0 to 4: 7.000000
-Path from 3 to 4: 0->2->1->3->4
+------------------------------
+total cost from 0 to 4: 7.00
+Path from 0 to 4: 0->2->1->3->4
 */
