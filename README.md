@@ -6,7 +6,7 @@
 - [Dijkstra's Algorithm](./Dijkstra.java) find Shortest Path and cost in Positive weight Directed graph
 - [Bellman Ford](./BellmanFord.java) find shortest path in Negative Cycle graph
 - [Floyd Warshall](./FloydWarshall.java) All Pairs Shortest Path (APSP)
-- [Tarjans Strongly Connected Component](./TarjansSCC.java)
+
 
 |                            | BFS                | Dijkstra's   | Bellman Ford | Floyd Warshall   |
 |----------------------------|--------------------|--------------|--------------|------------------|
@@ -16,3 +16,7 @@
 | __Detect Negative Cycle__  | No                 | No           | Yes          | Yes              |
 | __SP on weighted edges__   | Incorrect SP ans   | Best         | Works        | Bad in general   |
 | __SP on unweighted edges__ | Best               | Ok           | Bad          | Bad in general   |
+
+
+- [Bridges in undirected graph](./Bridges.java)
+- [Tarjans Strongly Connected Component](./TarjansSCC.java)
